@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: minezin;
+    src: url(font/mine1.ttf);
+}
+
+@font-face {
+    font-family: mine;
+    src: url(font/mine2.ttf);
+}
+
+@font-face {
+    font-family: coca;
+    src: url(font/LOKICOLA.TTF);
+}
+
+@font-face {
+    font-family: maiden;
+    src: url(font/maiden.ttf);
+}
+
+h1 {
+    font-family: minezin;
+}
+
+p:first-of-type {
+    font-family: mine;
+}
+
+p:last-of-type {
+    font-family: coca;
+}
+
+p:hover {
+    font-family: maiden;
+}
+
+.linkedin-icon {
+    font-size: 24px;
+    color: #0077b5;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.linkedin-icon:hover {
+    transform: scale(1.5);
+    color: #0e76a8;
+}

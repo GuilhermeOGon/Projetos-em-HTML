@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto 4 - Imagem como Exemplo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: white;
+            color: rgb(36, 36, 36);
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+        }
+
+        footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer li {
+            background-color: whitesmoke;
+            padding: 8px 15px;
+            border-radius: 15px;
+            border: 2px solid #ccc;
+        }
+
+        footer li a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+        }
+
+        footer li a:hover {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ponto 4 - Imagem como Exemplo</h1>
+    </header>
+
+    <section>
+        <h2>Exemplo Prático: Cardinalidade entre Produtos e Categorias</h2>
+        <p>
+            Vamos ilustrar um exemplo de cardinalidade entre duas entidades de um banco de dados:
+            <strong>Produtos</strong>
+            e <strong>Categorias</strong>.
+        </p>
+        <p>
+            A relação entre essas duas tabelas pode ser de 1:N (um para muitos), onde uma categoria pode ter vários
+            produtos, mas cada produto pertence a apenas uma categoria.
+        </p>
+        <img src="img/Exemplo.jpeg" alt="Exemplo de Cardinalidade 1:N entre Produtos e Categorias">
+        <p>
+            No diagrama acima, podemos ver como a tabela "Categorias" se relaciona com a tabela "Produtos". Cada
+            categoria pode ter diversos produtos, mas cada produto tem uma única categoria associada.
+        </p>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="IF_inicio.html" target="main">Início</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
