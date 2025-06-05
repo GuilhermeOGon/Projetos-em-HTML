@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe - elementos</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: sans-serif;
+        }
+        iframe {
+            border: 1px solid silver;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+            border-radius: 15px;
+            color: black;
+        }
+        
+
+        li {
+            display: inline;
+            margin-left: 5px;
+            border: 3px solid silver;
+            border-radius: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;  
+            transition: font-size 0.3s ease;  
+            padding: 5px 10px;  
+            border-radius: 5px;  
+        }
+
+        a:hover {
+            background-color: black;
+            color: white;
+            font-size: 20px;  
+        }
+
+        a:focus {
+            outline: none;  
+            color: white;  
+            background-color: grey;  
+            font-size: 20px;  
+        }
+        h2 a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            padding: 0;
+            border-radius: 0;
+            transition: none;
+        }
+
+        h2 a:hover {
+            background-color: transparent;
+            color: black;
+            font-size: 20px;
+        }
+
+        h2 a:focus {
+            outline: none;
+            color: black;
+            background-color: transparent;
+            font-size: 20px;
+        }
+
+        h2 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><a href="standby.html" target="vaitimao" class="titulo">Iframe</a></h2>
+    <ul>
+        <li><a href="elementosbloco.html" target="vaitimao" class="menu">Elementos bloco</a></li>
+        <li><a href="elementoslinha.html" target="vaitimao"class="menu">Elementos de linha</a></li>
+        <li><a href="blocolinha.html" target="vaitimao"class="menu">Bloco e Linha</a></li>
+        <li><a href="tabela.html" target="vaitimao"class="menu">Tabela</a></li>
+    </ul>
+    <iframe src="standby.html" frameborder="0" name="vaitimao" width="80%" height="600px"></iframe>
+</body>
+
+</html>

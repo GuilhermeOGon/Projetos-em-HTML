@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Magnus matrícula</title>
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            width: 500px;
+            height: 425px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            border: 1px solid silver;
+            box-shadow: 1px 1px 10px 5px silver;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        header {
+            background-color: #1E3A8A;
+            color: white;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 90px;
+            /* Tamanho fictício do logo */
+            height: auto;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            font-size: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+            /* Cor de destaque ao passar o mouse */
+        }
+
+        footer {
+            background-color: #1E3A8A;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 75px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-section {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .footer-section h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            font-size: 0.9rem;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="Logo da Escola Magnus" class="logo"> <!-- Logo fictício -->
+            <h1>Escola Estadual Magnus de Oliveira</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/home">Início</a></li>
+                <li><a href="/sobre">Sobre</a></li>
+                <li><a href="/noticias">Notícias</a></li>
+                <li><a href="/calendario">Calendário</a></li>
+                <li><a href="/contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="">
+            <fieldset>
+                <legend>matrícula</legend>
+                <div>
+                    <label for="NAluno">Nome do aluno:</label>
+                    <input type="text" id="NAluno" maxlength="30" placeholder="Digite aqui nome e sobrenome." required>
+                </div>
+                <div>
+                    <label for="DtNasc">Data de nascimento:</label>
+                    <input type="date" id="DtNasc" required>
+                </div>
+                <div>
+                    <label for="NResp">Nome do reponsável financeiro:</label>
+                    <input type="text" id="NResp" placeholder="Digite aqui nome e sobrenome." required>
+                </div>
+                <div>
+                    <label for="Ecorreio">E-mail:</label>
+                    <input type="email" id="Ecorreio" placeholder="ex: emailhipotetico@hipotetico.com" required>
+                </div>
+                <div>
+                    <label for="NCPF">CPF:</label>
+                    <input type="text" id="NCPF" placeholder="Digite seu CPF" maxlength="14" pattern="\d{3}.\d{3}.\d{3}.\d{2}"
+                    title="Formato de CPF inválido. Exemplo: 000.000.000-00" required>
+                </div>
+                <div>
+                    <label for="Ntell">Celular para contato:</label>
+                    <input type="text" id="Ntell" placeholder="ex: 98765-4321." maxlength="10" pattern="\d{4,5}-\d{4}" required>
+                </div>
+                <div>
+                    <label for="SlctSerie">Série do aluno:</label>
+                    <select name="select" id="SlctSerie">
+                        <option value="" selected>Selecione a série</option>
+                        <option value="S1">1° série</option>
+                        <option value="S2">2° série</option>
+                        <option value="S3">3° série</option>
+                        <option value="S4">4° série</option>
+                        <option value="S5">5° série</option>
+                    </select required>
+                </div>
+                <div>
+                    <p>Selecione o período:</p>
+                    <label for=""><input type="radio" name="turno" value="1">Turno da manhã</label>
+                    <label for=""><input type="radio" name="turno" value="2">Turno da tarde</label>
+                </div>
+
+                <div>
+                    <p>Marque as atividades extracurriculares que participa:</p>
+                    <label for=""><input type="checkbox" name="icheck" value="1">musicalização</label>
+                    <label for=""><input type="checkbox" name="icheck" value="2">judô</label>
+                    <label for=""><input type="checkbox" name="icheck" value="3">pintura</label>
+                    <label for=""><input type="checkbox" name="icheck" value="4">futebol</label>
+                    <label for=""><input type="checkbox" name="icheck" value="5">ballet</label>
+                    <label for=""><input type="checkbox" name="icheck" value="6">vôlei</label>
+                </div>
+                <div>
+                    <label for="cor">cor aqui</label>
+                    <input type="color" name="cor" id="cor">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <button type="reset">Limpar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h4>Escola Estadual Magnus de Oliveira</h4>
+                <p>Endereço: Rua das Flores, 123 - Bairro Centro, Cidade XYZ - CEP: 12345-678</p>
+                <p>Telefone: (11) 2345-6789</p>
+                <p>Email: contato@escolamagnus.edu.br</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="/sobre">Sobre a Escola</a></li>
+                    <li><a href="/noticias">Notícias</a></li>
+                    <li><a href="/calendario">Calendário Escolar</a></li>
+                    <li><a href="/contato">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociais</h4>
+                <a href="https://facebook.com/escolamagnus" target="_blank">Facebook</a>
+                <a href="https://instagram.com/escolamagnus" target="_blank">Instagram</a>
+                <a href="https://twitter.com/escolamagnus" target="_blank">Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Escola Estadual Magnus. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

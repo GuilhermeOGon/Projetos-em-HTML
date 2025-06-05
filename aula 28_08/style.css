@@ -1,0 +1,31 @@
+
+div{
+    width: 160px;
+    height: 160px;
+    background-color: silver;
+    border: 1px solid black;
+    position: absolute;
+
+}
+.d{
+    z-index: 10;
+    left: 20px;
+}
+
+.c{
+    width: 140px;
+    height: 140px;
+    z-index: 11;
+    left: 15px;
+}
+.b{
+    width: 120px;
+    height: 120px;
+    z-index: 12;
+    left: 10px;
+}
+.a{
+    width: 100px;
+    height: 100px;
+    z-index: 13;
+}

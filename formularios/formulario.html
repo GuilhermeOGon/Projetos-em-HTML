@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            box-shadow: 5px 10px silver;
+        }
+        form, header {
+            width: 50%;
+            margin: 0 auto;
+            border: 1px solid silver;
+            padding: 12px;
+            margin-bottom: 10px;   
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Tags de Formulário</h2>
+    </header>
+    <form action="" method="">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="itext">Campo de texto:</label>
+                <input type="text" id="itext" maxlength="5">
+            </div>
+            <div>
+                <label for="itext2">Campo somente leitura</label>
+                <input type="text" readonly disabled placeholder="Vai Corinthians!!">
+            </div>
+            <div>
+                <label for="inum">Campo numérico:</label>
+                <input type="number" min="5" max="25" id="inum">
+            </div>
+            <div>
+                <label for="idate">Campo de data:</label>
+                <input type="date" id="idate">
+            </div>
+            <div>
+                <label for="imail">Campo de email:</label>
+                <input type="email" id="imail">
+            </div>
+            <div>
+                <label for="ifile">Campo de arquivo</label>
+                <input type="file" id="ifile">
+            </div>
+            <div>
+                <label for="ipass">Campo de senha:</label>
+                <input type="password" id="ipass" required maxlength="6">
+                <input type="checkbox" onclick="mostrarPass()"> <label for="">Mostrar senha</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Campos de Opção</legend>
+            <div>
+                <p>Escolha sim ou não:</p>
+                <label for=""><input type="radio" name="iradio" value="0">Não</label>
+                <label for=""><input type="radio" name="iradio" value="1">Sim</label>
+            </div>
+            <div>
+                <p>Escolha todas as frutas que você gosta:</p>
+                <label for=""><input type="checkbox" name="icheck" value="1">Mangá</label>
+                <label for=""><input type="checkbox" name="icheck" value="2">Uva</label>
+                <label for=""><input type="checkbox" name="icheck" value="3">Melão</label>
+                <label for=""><input type="checkbox" name="icheck" value="3">Pera</label>
+            </div>
+            <div>
+                <label for="slct">Select simples:</label>
+                <select name="select" id="slct">
+                    <option value="valor1">Valor1</option>
+                    <option value="valor2" selected>Valor2</option>
+                    <option value="valor1">Valor3</option>
+                </select>
+            </div>
+            <div>
+                <label for="slct">Select múltiplo:</label>
+                <select name="select" id="slct" multiple>
+                    <option value="valor1">Valor1</option>
+                    <option value="valor2" selected>Valor2</option>
+                    <option value="valor1">Valor3</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Área do texto:</label>
+                <textarea name="tarea" id="tarea" placeholder="Deixe a sua reclamação"
+                rows="5" cols="61"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <button type="reset">Limpar</button>
+            </div>
+        </fieldset>
+    </form>
+    <script src="js/viewpass.js"></script>
+</body>
+
+</html>
